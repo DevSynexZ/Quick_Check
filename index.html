@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="quickCheck.css" />
+  <title>QuickCheck - Check And Note</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+<body>
+  <div class="heading"> <img src="images/Screenshot 2025-10-25 011050.png" alt="">
+    <p>Your Daily Companion for Weather Updates and Task Management</p>
+</div>
+
+  <div class="container">
+    
+      
+    <div class="hero">
+      
+   
+
+      <div class="calendar testcol" >
+        
+        <div class="left">
+          <p id="date">01</p>
+          <p id="day">Sunday</p>
+        </div>
+        <div class="right">
+          <p id="month">February</p>
+          <p id="year">2025</p>
+        </div>
+      </div>
+
+
+      <div class="weather testcol">
+        <div class="search">
+          <input type="text" placeholder="Enter City Name" spellcheck="false">
+          <button><img src="images/search.png" alt=""></button>
+        
+        <div class="error">
+          <p>Invalid City Name</p>
+        </div>
+        
+
+        <div class="mWeather">
+          <img src="images/rain.png" class="weather-icon">
+          <h1 class="temp">26°C</h1>
+          <h2 class="city">Khulna</h2>
+          <div class="details">
+            <div class="col">
+              <img src="images/humidity.png" alt="">
+              <div>
+                <p class="humidity">50%</p>
+                <p>Humidity</p>
+              </div>
+            </div>
+            <div class="col">
+              <img src="images/wind.png" alt="" class="img2">
+              <div>
+                <p class="wind">15 km/h</p>
+                <p>Wind Speed</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container2 testcol">
+      <div class="todo">
+        <h2>Check Your Essentials <img src="images/icon.png"></h2>
+        <p>organize, track, and complete your daily tasks with focus and clarity</p>
+        <div class="row">
+          <input type="text" id="input-box" placeholder="Add Your Text">
+          <button class="go" onclick="addTask()">Add</button>
+        </div>
+        <ul id="list-container">
+          <!-- <li class="checked">T1</li>
+          <li>T2</li>
+          <li>T3</li> -->
+        </ul>
+      </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="quickCheck.js">
+
+  </script>
+
+
+
+
+</body>
+
+</html>
